@@ -27,6 +27,18 @@ npm i -D tsx
 npx tsx src/index.ts
 ```
 
+# About tsx
+I found the eaiest way to run typescript code is through tsx
+
+[https://www.npmjs.com/package/tsx#how-is-tsx-different-from-ts-node
+](https://tsx.is/)
+
+So when you run `node file.js` for javascript in typescript you'd run 
+
+`tsx file.ts` 
+
+It really helps simplify the workflow needed to get up and running on a typescript project.
+
 # Setting up node & typescript
 1. mkdir `my-typescript-app`
 2. `git init`
