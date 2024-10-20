@@ -14,9 +14,26 @@ project so I am been teaching myself the build tools
 `asdf install nodejs 20.12.2`
 `asdf local nodejs 20.12.2`
 
+
+# Difference between npm & npx?
+
+- NPM is package manager for installing deleting and updating javascript packages.
+- NPX is a package executor that lets you execute a package without installing them.
+- In this case we are using `npm` to install and init some packages
+- NPX is used in this case sometimes to run a typescript file
+example
+```
+npm i -D tsx
+npx tsx src/index.ts
+```
+
 # Setting up node & typescript
-1. Setting up a new project `npm init -y`
-2. create an index.js `touch index.js`
+1. mkdir `my-typescript-app`
+2. `git init`
+3. Setting up a new project `npm init -y`
+4. install dev dependencies `npm i -D typescript ts-node @types/node`
+5. npm i -D tsx
+3. create an index.ts `touch index.ts`
 
     commonjs --> `const fs = require('fs');`
 
@@ -25,7 +42,7 @@ project so I am been teaching myself the build tools
 
     running `node .` with the import fs code will give us an error
 
-3. Adjust the `type` in the package.json
+4. Adjust the `type` in the package.json
 
 ```
 ...
@@ -37,7 +54,7 @@ project so I am been teaching myself the build tools
 now `node .` will work! 
 
 4. Adding typescript
-- `npm install typescript --save-dev`
+- `cd .`
 
 
 `--save` will route it to a core dependency
@@ -73,5 +90,4 @@ moduleResoluton is how code will be found if you import
 - ES2020 if is a modern version of node.
 - sourcemap to the comon
 - outdir where the file js code will go.
-
 - include will have the source directory.
