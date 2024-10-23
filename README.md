@@ -42,31 +42,7 @@ It really helps simplify the workflow needed to get up and running on a typescri
 3. Setting up a new project `npm init -y`
 4. install dev dependencies `npm i -D typescript ts-node @types/node`
 5. npm i -D tsx
-6. create an index.ts `touch index.ts`
-5. Adding typescript
-- `cd .`
-
-
-`--save` will route it to a core dependency
-`--save-dev` will route it a dev depencney 
-
-A good explaintion I've heard is what needs to be part 
-of the core project to work. 
-
-ex. you dont need a test suite to run the core app 
-
-in the `package.json` add the following
-
-
-5.  Adding types declaration for errors
-- `npm i -D@types/node`
-
-6. Create  Source Directory 
-7. Create tsconfig.js
-- module the define system of the program (commonjs good for require)
-- nodenext is newer
-moduleResoluton is how code will be found if you import
-- ES2020 if is a modern version of node.
-- sourcemap to the comon
-- outdir where the file js code will go.
-- include will have the source directory.
+6. create a source directory `mkdir src`
+7. create an index.ts `touch index.ts`
+8.  Adding types declaration for errors
+   `npm i -D@types/node`
